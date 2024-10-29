@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app/base/res/styles/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,33 +16,29 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Column(
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "Good morning",
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                          ),
+                          style: AppStyles.headlineStyle3,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Text(
                           "Book tickets",
-                          style: TextStyle(
-                            fontSize: 26,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF3b3b3b),
-                          ),
+                          style: AppStyles.headlineStyle1,
                         ),
                       ],
                     ),
                     Container(
-                      color: Colors.blue,
-                      width: 100,
-                      height: 70,
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                     ),
                   ],
                 ),
